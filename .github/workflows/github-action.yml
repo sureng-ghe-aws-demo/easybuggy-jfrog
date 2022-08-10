@@ -6,8 +6,13 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+
+    jobs:
+     build:
+      env:
+       JFROG_USER: ${{secrets.JFROG_USER}}
+       JFROG_PASS: ${{secrets.JFROG_PASS}}
 
     steps:
     - uses: actions/checkout@v2
@@ -16,5 +21,7 @@ jobs:
       with:
         java-version: '8'
         distribution: 'adopt'
+        server-username: JFROG_USER
+        server-password: JFROG_PASS
     - name: Build with Maven
       run: mvn clean install
