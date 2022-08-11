@@ -22,21 +22,7 @@
 		<jvm.args.gc.log.file.size>-XX:GCLogFileSize=10M</jvm.args.gc.log.file.size>
 	</properties>
 
-	<profiles>
-		<profile>
-			<id>artifactory</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<repositories>
-				<repository>
-					<snapshots />
-					<id>jfrog</id>
-					<name>mvncentral-remote</name>
-					<url>https://mend.jfrog.io/artifactory/mvncentral-remote</url>
-				</repository>
-			</repositories>
-		</profile>
+	<profiles>		
 		<profile>
 			<id>JDK8-Switch</id>
 			<activation>
@@ -146,6 +132,17 @@
 			<version>1.5.1</version>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>jfrog</id>
+            <name>mvncentral-remote</name>
+            <url>https://mend.jfrog.io/artifactory/mvncentral-remote</url>
+        </repository>
+    </repositories>
 	
 	<build>
 		<plugins>
