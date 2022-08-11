@@ -59,7 +59,7 @@
             		</snapshots>
             		<id>jfrog</id>
             		<name>mvncentral-remote</name>
-            		<url>https://mend.jfrog.io/artifactory/mvncentral-remote</url>
+            		<url>https://mend.jfrog.io/artifactory/jfrogdemo-mvn-dev-local</url>
         	</repository>
     </repositories>
 	
