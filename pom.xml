@@ -52,6 +52,17 @@
 		</profile>
 	</profiles>
 	
+	<repositories>
+         	<repository>
+            		<snapshots>
+                	<enabled>true</enabled>
+            		</snapshots>
+            		<id>jfrog</id>
+            		<name>mvncentral-remote</name>
+            		<url>https://mend.jfrog.io/artifactory/jfrogdemo-mvn-dev-local</url>
+        	</repository>
+    </repositories>
+	
 	<dependencies>
 		<dependency>
 		  <groupId>wss</groupId>
@@ -132,18 +143,7 @@
 			<version>1.5.1</version>
 		</dependency>
 	</dependencies>
-	
-	<repositories>
-        <repository>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>jfrog</id>
-            <name>mvncentral-remote</name>
-            <url>https://mend.jfrog.io/artifactory/mvncentral-remote</url>
-        </repository>
-    </repositories>
-	
+		
 	<build>
 		<plugins>
 			<plugin>
