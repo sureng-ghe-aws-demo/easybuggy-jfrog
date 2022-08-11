@@ -21,7 +21,7 @@
   },
   "hostRules": [
     {
-    "matchHost": "https://mend.jfrog.io/artifactory/jfrogdemo-mvn-dev-local",
+    "matchHost": "https://mend.jfrog.io/artifactory/mvncentral-remote",
     "hostType": "maven",
     "username": "mend",
     "encrypted": {
